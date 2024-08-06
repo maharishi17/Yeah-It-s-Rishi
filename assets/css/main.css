@@ -1026,32 +1026,32 @@ input, select, textarea {
 			
 			.drum {
 				outline: none;
-				border: 8px solid #efff94a8; /* A vibrant orange-red to match the sunset */
+				border: 8px solid #efff94a8;
 				font-size: 2rem;
 				font-family: 'Arvo', cursive;
-				line-height: 1.5; /* Adjust line-height for better text spacing */
+				line-height: 1.5; 
 				font-weight: 900;
-				color: #ff69b4; /* A bright pink to complement the sunset colors */
-				text-shadow: 3px 0 #800080; /* A purple shadow to match the sky */
+				color: #ff69b4; 
+				text-shadow: 3px 0 #800080; 
 				border-radius: 1;
 				display: inline-block;
-				padding: 10px 20px; /* Add padding for better spacing */
+				padding: 10px 20px;
 				text-align: left;
 				margin: 15px;
-				background-color: rgba(126, 148, 247, 0.753); /* A light orange background to complement the sunset */
-				cursor: pointer; /* Change cursor to pointer on hover */
-				transition: all 0.3s ease; /* Smooth transition for hover effect */
+				background-color: rgba(126, 148, 247, 0.753); /
+				cursor: pointer; 
+				transition: all 0.3s ease; 
 			}
 			
 			.drum:hover {
-				background-color: rgba(255, 166, 0, 0.397); /* Darker orange on hover */
-				color: #fff; /* Change text color to white on hover */
-				text-shadow: 3px 0 #000; /* Change text-shadow to black on hover */
-				border-color: #fff; /* Change border color to white on hover */
+				background-color: rgba(255, 166, 0, 0.397); 
+				color: #fff; 
+				text-shadow: 3px 0 #000; 
+				border-color: #fff;
 			}
 			
 			.drum:hover {
-				background-color: #f0f0f0; /* Add hover effect */
+				background-color: #f0f0f0; 
 			}
 			
 
