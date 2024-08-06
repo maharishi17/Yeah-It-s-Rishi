@@ -999,6 +999,62 @@ input, select, textarea {
 				width: auto;
 			}
 
+
+
+			footer {
+				color: sandybrown;
+				font-family: sans-serif;
+			}
+			
+			.set {
+				text-align: center; /* Center-align the content within the set */
+			}
+			
+			.game-over {
+				background-color: orange;
+				opacity: 0.8;
+			}
+			
+			.pressed {
+				box-shadow: 0 3px 4px 0 #056383;
+				opacity: 0.5;
+			}
+			
+			.red {
+				color: #447e23;
+			}
+			
+			.drum {
+				outline: none;
+				border: 10px solid #404B69;
+				font-size: 2rem;
+				font-family: 'Arvo', cursive;
+				line-height: 1.5; /* Adjust line-height for better text spacing */
+				font-weight: 900;
+				color: violet;
+				text-shadow: 3px 0 #acb6b9;
+				border-radius: 10px;
+				display: inline-block;
+				padding: 10px 20px; /* Add padding for better spacing */
+				text-align: center;
+				margin: 15px;
+				background-color: white;
+				cursor: pointer; /* Change cursor to pointer on hover */
+			}
+			
+			.drum:hover {
+				background-color: #f0f0f0; /* Add hover effect */
+			}
+			
+
+
+
+
+
+
+
+
+
 /* List */
 
 	ul.default {
