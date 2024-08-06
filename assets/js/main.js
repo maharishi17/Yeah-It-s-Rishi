@@ -28,6 +28,72 @@
 			}, 100);
 		});
 
+
+	// Select all drum buttons
+var drumButtons = document.querySelectorAll(".drum");
+
+// Add click event listeners to all drum buttons
+drumButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        var buttonClass = this.classList[0]; // Get the class name (e.g., "w")
+        console.log("Button clicked: " + buttonClass); // Debugging
+        playSound(buttonClass);
+        addAnimation(buttonClass);
+    });
+});
+
+// Add keypress event listener to the entire document
+document.addEventListener("keypress", function(event) {
+    playSound(event.key);
+    addAnimation(event.key);
+});
+
+// Function to play sound based on the key/button pressed
+function playSound(key) {
+    console.log("Key pressed: " + key); // Debugging
+    switch (key) {
+        case "w":
+            var audio = new Audio("assets/sounds/silent.mp3");
+            console.log("Audio object created for 'w'"); // Debugging
+            audio.play().catch(function(error) {
+                console.log("Error playing audio: " + error); // Debugging
+            });
+            break;
+        // Add more cases for different keys if needed
+        default:
+            console.log("No sound associated with: " + key); // Debugging
+    }
+}
+
+// Function to add animation to the pressed button
+function addAnimation(currentKey) {
+    var activeButton = document.querySelector("." + currentKey);
+
+    if (activeButton) {
+        activeButton.classList.add("pressed");
+
+        setTimeout(function() {
+            activeButton.classList.remove("pressed");
+        }, 100);
+    } else {
+        console.log("No button found for key: " + currentKey); // Debugging
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
 	// Touch mode.
 		if (browser.mobile)
 			$body.addClass('is-touch');
