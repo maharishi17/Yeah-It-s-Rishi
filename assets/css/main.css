@@ -1026,20 +1026,28 @@ input, select, textarea {
 			
 			.drum {
 				outline: none;
-				border: 10px solid #404B69;
+				border: 8px solid #efff94a8; /* A vibrant orange-red to match the sunset */
 				font-size: 2rem;
 				font-family: 'Arvo', cursive;
 				line-height: 1.5; /* Adjust line-height for better text spacing */
 				font-weight: 900;
-				color: violet;
-				text-shadow: 3px 0 #acb6b9;
-				border-radius: 10px;
+				color: #ff69b4; /* A bright pink to complement the sunset colors */
+				text-shadow: 3px 0 #800080; /* A purple shadow to match the sky */
+				border-radius: 1;
 				display: inline-block;
 				padding: 10px 20px; /* Add padding for better spacing */
-				text-align: center;
+				text-align: left;
 				margin: 15px;
-				background-color: white;
+				background-color: rgba(126, 148, 247, 0.753); /* A light orange background to complement the sunset */
 				cursor: pointer; /* Change cursor to pointer on hover */
+				transition: all 0.3s ease; /* Smooth transition for hover effect */
+			}
+			
+			.drum:hover {
+				background-color: rgba(255, 166, 0, 0.397); /* Darker orange on hover */
+				color: #fff; /* Change text color to white on hover */
+				text-shadow: 3px 0 #000; /* Change text-shadow to black on hover */
+				border-color: #fff; /* Change border color to white on hover */
 			}
 			
 			.drum:hover {
